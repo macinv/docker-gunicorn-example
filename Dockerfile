@@ -2,7 +2,7 @@ FROM python:2.7-alpine
 MAINTAINER Jeff Li <jeff.li@mackenzieinvestments.com>
 
 # add tini
-RUN apk add tini
+RUN apk add --update tini
 
 COPY . /app
 WORKDIR /app
